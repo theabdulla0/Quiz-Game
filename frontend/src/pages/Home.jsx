@@ -147,12 +147,9 @@ const Home = ({ children }) => {
           { headers }
         );
 
-        console.log("Result saved:", response.data);
         toast.success("Quiz result saved successfully!");
       }
     } catch (error) {
-      console.error("Error saving result:", error);
-
       if (!response?.data.success) {
         toast.error(response.data.error);
       } else if (error.response?.status === 400) {

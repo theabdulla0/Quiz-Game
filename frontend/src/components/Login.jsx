@@ -38,7 +38,6 @@ const saveAuthData = (token, user) => {
   }
 };
 
-// --- Hoisted subcomponent to keep focus stable ---
 function FormField({
   type = "text",
   name,
